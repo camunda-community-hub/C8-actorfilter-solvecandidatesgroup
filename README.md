@@ -23,12 +23,15 @@ This actor filter will read the candidateGroup, calculate the list of group user
 Then, if a user is in the group, it will be in the candidateuser and will see the task.
 
 To that, the actor filter needs one input, the candidateGroups. It will produce one output, the candidateUsers
+
 ![input-output.png](doc/input-output.png)
 
 Then, it has to be registered as a START listener
+
 ![listener-start.png](doc/listener-start.png)
 
 Last but not least, the candidateUser must be mapped
+
 ![assignement.png](doc%2Fassignement.png)
 
 
@@ -37,6 +40,7 @@ Note: It may be possible to allow the actor filter to write directly in the Cand
 
 # An example
 Deploy the process
+
 ![ActorFilterCandidateGroup.png](doc/ActorFilterCandidateGroup.png)
 
 * the task `QualityCheck` has an assignment to the group `quality-check`, but without the actor filter. Nobody will see that task
